@@ -1,0 +1,320 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+a{
+    color:#eee;
+    text-decoration: none;
+}
+
+/*----UTILITY----*/
+.btn{
+    display: inline-block;
+    font-size: 20px;
+    background-color: #333;
+    color: white;
+    padding:13px 20px;
+    border:none;
+    border-radius: 0.5rem;
+}
+
+.btn-light{
+    background-color: #bbb;
+    color:#333;
+}
+
+.btn:hover{
+    background-color: orange;
+    color:#333;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/*----NAVBAR----*/
+#navbar{
+    background-color: #333;
+}
+
+#navbar .container{
+    /*METTE IN ORIZZONTALE IL LOGO E LA LISTA*/
+    display: flex;
+    /*METTE AGLI OPPOSTI IL LOGO E LA LISTA UL*/
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#navbar .container ul{
+    display: flex;
+    padding-right: 1rem;
+}
+
+#navbar .container ul li{
+    list-style: none;
+    padding:10px;
+}
+
+#navbar .container ul li a{
+    display: block;
+    padding: 20px;
+}
+
+#navbar .container h1{
+    text-transform: uppercase;
+    padding-left: 1.5rem;
+    
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current{
+    background-color: #555;
+    color:orange;
+}
+
+/*----SECTION----*/
+#showcase .container{
+    display: flex;
+    /*perchè voglio che gli elementi non siano di fianco ma uno sotto all'altro*/
+    flex-direction: column;
+    /*per centrare*/
+    align-items: center;
+    justify-content: center;
+
+    height:80vh;
+    background:url("../img/pane.jpg") no-repeat center center/cover;
+}
+
+#showcase .container h1{
+     color:white;
+     font-size: 3rem;
+     padding-bottom:2rem;
+}
+
+#showcase .container p{
+    color:white;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.color-primary{
+    color:orange;
+}
+
+/*----SECTION 2----*/
+
+#showcase2 .container{
+    display:flex;
+    height: 350px;
+}
+
+#showcase2 .container .image{
+    background: url("../img/mini_pane.jpg") no-repeat center center/cover;
+    flex:1;
+}
+
+#showcase2 .container .history{
+    display:flex;
+    flex:1;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color:#fff;
+    background-color: #333;
+
+}
+
+#showcase2 .container .history h1{
+    padding-bottom: 20px;
+}
+
+#showcase2 .container .history p{
+    padding-bottom: 20px;
+}
+
+/*----SECTION 3----*/
+
+#showcase3{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.box-white{
+    background-color: white;
+}
+
+.box-orange{
+    background-color: orange;
+}
+
+.box{
+    flex:1;
+    padding:100px 0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#showcase3 i{
+    padding-bottom: 20px;
+}
+
+#showcase30 h3{
+    padding-bottom: 30px;
+}
+
+/*----FOOTER----*/
+#footer{
+    background-color: #333;
+    padding: 30px 0;
+    color: white;
+    text-align: center;
+}
+
+/*----ABOUT INFO----*/
+#about-info .container{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+#about-info img{
+    width:70%;
+    /*Rendere la foto rotonda*/
+    border-radius: 50%;;
+    margin:auto;
+
+}
+
+#about-info .info-left{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+
+}
+
+#about-info .info-left h1{
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+#about-info .info-left p{
+    width: 80%;
+    padding-bottom: 1.5rem;
+}
+
+#about-info .info-right{
+    flex:1;
+    display: flex;
+
+}
+
+/*----TESTIMONIALS----*/
+
+#testimonials{
+    height:700px;
+    padding-top:100px;
+    background: url("../img/meta_pane.jpg") no-repeat center center/cover;
+}
+
+#testimonials .commento img{
+    width:100px;
+    border-radius: 50%;
+}
+
+#testimonials .commento p{
+    width:80%;
+}
+
+#testimonials h2{
+    color:white;
+    text-align: center;
+    padding-bottom: 3rem;
+    text-shadow: 2px 2px #333 ;
+    font-size:2.5rem;
+}
+
+
+#testimonials .commento{
+    padding:1.2rem;
+    margin-bottom: 3rem;
+    border-radius: 5px;
+    background-color: orange;
+    opacity: 0.9;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*----CONTACT----*/
+#contact-form{
+    padding:2rem 5rem;
+
+}
+
+#contact-form .form-group{
+    margin-bottom: 20px;
+}
+
+#contact-form h1{
+    font-size: 2rem;
+    padding-bottom:1rem;
+}
+
+#contact-form p{
+    padding-bottom: 1rem;
+}
+
+#contact-form button{
+    margin-top:1rem;
+}
+
+#contact-form input,
+#contact-form textarea{
+    width:100%;
+    padding:10px;
+    border: 1px solid #ddd;
+}
+
+#contact-form label{
+    margin-bottom: 5px;
+    display: block;
+}
+
+#contact-form textarea{
+    height:180px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus{
+    outline:none;
+    border-color: orange;
+}
+
+/*----CONTACT INFO----*/
+#contact-info .container{
+    display:flex;
+    justify-content: space-evenly;
+    height:200px;
+    background-color: #222;
+    color:white;
+    align-items:center;
+    text-align: center;
+}
+
+#contact-info .container i,
+#contact-info .container h3{
+    margin-bottom: 1rem;
+}

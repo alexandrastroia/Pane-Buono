@@ -1,0 +1,23 @@
+#showcase2 .container .history{
+    text-align:center;
+}
+
+#showcase3{
+    flex-direction: column;
+}
+
+
+/*----About----*/
+
+#about-info .container{
+    flex-direction: column;
+}
+
+#testimonials{
+    padding-bottom:350px;
+}
+
+/*----Contact----*/
+.info-box{
+    transform: scale(0.7);
+}

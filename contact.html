@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/e33c4be0cb.js" crossorigin="anonymous"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" media="screen and (max-width:500px)" href="css/mobile.css" type="text/css"/>
+    <title>Pane Buono</title>
+</head>
+<body>
+    <header>
+        <!--NAVBAR-->
+        <nav id="navbar">
+            <div class="container">
+                <!--LOGO-->
+                <h1 class="logo"><a href="index.html">pane buono</a></h1>
+                <!--PAGES-->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="current" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--SECTION 1-->
+    <section id="contact-form">
+        <div class="container">
+            <h1 class="color-primary">Contattaci</h1>
+            <p>Per qualunque informazione o richiesta compilare il form sotto</p>
+            <form action="get">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="msg">Messaggio</label>
+                    <textarea id="msg" name="msg"></textarea>
+                    <button type="submit" class="btn">Invia</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!--SECTION 2-->
+    <section id="contact-info">
+        <div class="container">
+            <div class="info-box">
+                <i class="fas fa-hotel fa-3x"></i>
+                <h3>Location</h3>
+                <p>Modena (MO), Italy</p>
+            </div>
+            <div class="info-box">
+                <i class="fas fa-phone fa-3x"></i>
+                <h3>Numero di telefono</h3>
+                <p>351 123 4567</p>
+            </div>
+            <div class="info-box">
+                <i class="fas fa-envelope fa-3x"></i>
+                <h3>Email</h3>
+                <p>info-panebuono@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer id="footer">
+        <p>Pane Buono &copy; 2021, All rights reserved</p>
+    </footer>
+</body>
+</html>
