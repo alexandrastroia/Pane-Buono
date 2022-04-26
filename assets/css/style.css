@@ -67,10 +67,10 @@ a{
     padding: 20px;
 }
 
-#navbar .container h1{
-    text-transform: uppercase;
+
+#navbar .container a img{
     padding-left: 1.5rem;
-    
+    width:75%;
 }
 
 #navbar ul li a:hover,
